@@ -11,28 +11,31 @@
   <!-- Header Animations -->
   <img src="assets/animated-analytics.svg" alt="Animated Analytics Graphic" width="100%" />
 
-  <br/><br/>
-
-  <img src="assets/data-pipeline.svg" alt="Nitin Salunke Data Analytics Pipeline" width="100%" />
-
-  <br/><br/>
-
-  [![Profile Views](https://komarev.com/ghpvc/?username=nitinsalunke613&label=Profile%20Views&color=00d4ff&style=for-the-badge)](https://github.com/nitinsalunke613)
-  [![GitHub followers](https://img.shields.io/github/followers/nitinsalunke613?style=for-the-badge&logo=github&color=00d4ff)](https://github.com/nitinsalunke613)
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/nitin-salunke-17897139b/)
-  [![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:nitinsalunke1697@gmail.com)
-
 </div>
 
 ---
 
 ### 🙋‍♂️ About Me
+
+<table>
+<tr>
+<td width="60%" valign="top">
+
 I'm a fresher breaking into the IT industry as a Data Analyst. I build end-to-end analytics projects: clean messy data, query it with SQL, explore and test it in Python, and present insights in Power BI dashboards, always ending with clear, business-ready recommendations.
 
 - 🔭 **Building**: Portfolio projects in retail, supply chain, and e-commerce analytics
 - 🌱 **Learning**: Advanced SQL, statistics, and AI tools for data analysis
 - 🎯 **Looking for**: Data Analyst / Junior Analyst roles
 - 📫 **Reach me**: nitinsalunke1697@gmail.com
+
+</td>
+<td width="40%" align="center" valign="middle">
+
+<img src="assets/coder.svg" width="98%" alt="Data Analyst // Nitin Salunke" />
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -46,6 +49,10 @@ I'm a fresher breaking into the IT industry as a Data Analyst. I build end-to-en
 | 4️⃣ **Validate** | Hypothesis testing on findings | `SciPy` |
 | 5️⃣ **Visualize** | Interactive dashboards with DAX | `Power BI` |
 | 6️⃣ **Recommend** | Prioritized, actionable next steps | `PDF reports`, `README` |
+
+<br/><br/>
+
+  <img src="assets/data-pipeline.svg" alt="Nitin Salunke Data Analytics Pipeline" width="100%" />
 
 ---
 
