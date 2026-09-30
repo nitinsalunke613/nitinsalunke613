@@ -123,7 +123,6 @@
       .drop-col2 { animation: matrixRainDrop 3.2s linear infinite 1s; }
       .drop-col3 { animation: matrixRainDrop 4.5s linear infinite 0.5s; }
       .drop-col4 { animation: matrixRainDrop 3.8s linear infinite 1.8s; }
-      .drop-col5 { animation: matrixRainDrop 4.2s linear infinite 2.2s; }
     ]]></style>
   </defs>
 
@@ -131,52 +130,51 @@
   <rect width="800" height="620" fill="#0d1117" rx="14"/>
   <rect x="1" y="1" width="798" height="618" fill="none" stroke="#30363d" stroke-width="1.5" rx="14"/>
 
-  <!-- Matrix Digital Code Columns (Ambient Background) -->
-  <g opacity="0.35" font-family="'Fira Code', monospace" font-size="11" fill="#00d4ff">
+  <!-- Data Stream Background Grid (SQL, DAX & Python keywords) -->
+  <g opacity="0.30" font-family="'Fira Code', monospace" font-size="11" fill="#00d4ff">
     <g class="drop-col1" transform="translate(60, 20)">
-      <text y="0">01</text><text y="20">AI</text><text y="40">torch</text><text y="60">cv2</text><text y="80">101</text>
+      <text y="0">SELECT</text><text y="20">pandas</text><text y="40">DAX</text><text y="60">JOIN</text><text y="80">170K</text>
     </g>
     <g class="drop-col2" transform="translate(180, 10)">
-      <text y="0">RAG</text><text y="20">LLM</text><text y="40">010</text><text y="60">node</text><text y="80">0xFF</text>
+      <text y="0">PowerBI</text><text y="20">seaborn</text><text y="40">GROUP</text><text y="60">KPIs</text><text y="80">SQL</text>
     </g>
     <g class="drop-col3" transform="translate(620, 25)">
-      <text y="0">eval</text><text y="20">loss</text><text y="40">0.001</text><text y="60">cuda</text><text y="80">sync</text>
+      <text y="0">SciPy</text><text y="20">numpy</text><text y="40">WHERE</text><text y="60">charts</text><text y="80">ETL</text>
     </g>
     <g class="drop-col4" transform="translate(720, 15)">
-      <text y="0">1011</text><text y="20">FastAPI</text><text y="40">200</text><text y="60">GET</text><text y="80">res</text>
+      <text y="0">MySQL</text><text y="20">insight</text><text y="40">clean</text><text y="60">DAX</text><text y="80">merge</text>
     </g>
   </g>
 
   <!-- Neon Ambient Desk Glow -->
   <ellipse cx="400" cy="460" rx="360" ry="110" fill="url(#ambientUnderGlow)" filter="url(#softGlow)"/>
 
-  <!-- Top Floating AI Neural Network Hologram -->
+  <!-- Top Floating Data Analytics Hologram (Data Pipeline & 3D Cube) -->
   <g class="anim-holo" transform="translate(400, 110)">
     <!-- Rotating Halo Orbit -->
     <ellipse cx="0" cy="0" rx="110" ry="24" fill="none" stroke="#00d4ff" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.6"/>
     <ellipse cx="0" cy="0" rx="80" ry="16" fill="none" stroke="#7f00ff" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.8"/>
 
-    <!-- Neural Network Node Cluster (Deep Learning Architecture) -->
-    <!-- Connection lines -->
-    <path d="M -70 -10 L -30 -20 L 25 -15 L 70 -5" stroke="#00d4ff" stroke-width="1.5" class="anim-node-pulse" fill="none"/>
-    <path d="M -70 -10 L 0 5 L 70 -5" stroke="#7f00ff" stroke-width="1.5" class="anim-node-pulse" fill="none"/>
-    <path d="M -30 -20 L 0 20 L 70 15" stroke="#00d4ff" stroke-width="1.5" class="anim-node-pulse" fill="none"/>
-    <path d="M -50 15 L 0 5 L 45 -22" stroke="#00ff66" stroke-width="1" class="anim-node-pulse" fill="none"/>
+    <!-- 3D Holographic Data Cube & Pipeline Flow -->
+    <g transform="translate(0, -10)">
+      <!-- Isometric Data Cube -->
+      <path d="M 0 -25 L 25 -12 L 25 15 L 0 28 L -25 15 L -25 -12 Z" fill="#0d1117" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+      <path d="M 0 -25 L 0 28 M -25 -12 L 0 0 L 25 -12" fill="none" stroke="#00d4ff" stroke-width="1.2"/>
+      <path d="M 0 0 L 0 28" fill="none" stroke="#7f00ff" stroke-width="1.5"/>
+      
+      <!-- Flow Nodes (SQL -> Python -> Power BI) -->
+      <path d="M -80 0 L -25 0 M 25 0 L 80 0" stroke="#00ff66" stroke-width="1.5" class="anim-node-pulse" fill="none"/>
+      
+      <circle cx="-80" cy="0" r="12" fill="#0d1117" stroke="#00d4ff" stroke-width="1.5"/>
+      <text x="-80" y="3" font-family="'Fira Code', monospace" font-size="7" fill="#00d4ff" text-anchor="middle" font-weight="600">SQL</text>
 
-    <!-- Nodes -->
-    <circle cx="-70" cy="-10" r="5" fill="#00d4ff" filter="url(#neonBlur)"/>
-    <circle cx="-50" cy="15" r="4" fill="#7f00ff"/>
-    <circle cx="-30" cy="-20" r="5.5" fill="#00ff66"/>
-    <circle cx="0" cy="5" r="7" fill="#ffffff" stroke="#00d4ff" stroke-width="2" filter="url(#neonBlur)"/>
-    <circle cx="25" cy="-15" r="5" fill="#00d4ff"/>
-    <circle cx="0" cy="20" r="4.5" fill="#7f00ff"/>
-    <circle cx="45" cy="-22" r="5" fill="#00ff66"/>
-    <circle cx="70" cy="-5" r="6" fill="#00d4ff" filter="url(#neonBlur)"/>
-    <circle cx="70" cy="15" r="4" fill="#7f00ff"/>
+      <circle cx="80" cy="0" r="12" fill="#0d1117" stroke="#7f00ff" stroke-width="1.5"/>
+      <text x="80" y="3" font-family="'Fira Code', monospace" font-size="7" fill="#7f00ff" text-anchor="middle" font-weight="600">BI</text>
+    </g>
 
     <!-- Holographic Badge Label -->
-    <rect x="-75" y="32" width="150" height="20" rx="10" fill="#0d1117" stroke="#00d4ff" stroke-width="1" opacity="0.9"/>
-    <text x="0" y="46" font-family="'Orbitron', sans-serif" font-size="9" fill="#00d4ff" font-weight="700" text-anchor="middle" letter-spacing="1">NEURAL ENGINE // ACTIVE</text>
+    <rect x="-85" y="32" width="170" height="20" rx="10" fill="#0d1117" stroke="#00d4ff" stroke-width="1" opacity="0.9"/>
+    <text x="0" y="46" font-family="'Orbitron', sans-serif" font-size="9" fill="#00d4ff" font-weight="700" text-anchor="middle" letter-spacing="1">DATA PIPELINE // ONLINE</text>
   </g>
 
   <!-- Battlestation Desk -->
@@ -190,7 +188,7 @@
     <polygon points="110,478 690,478 720,512 80,512" fill="#0a0f18" stroke="#7f00ff" stroke-width="1.2" stroke-opacity="0.6"/>
   </g>
 
-  <!-- Left Auxiliary Monitor (Logs / Terminal Stream) -->
+  <!-- Left Auxiliary Monitor (SQL Queries & Database Stream) -->
   <g class="vertical-monitor-left" transform="rotate(4 165 310)">
     <!-- Stand -->
     <rect x="175" y="380" width="14" height="92" fill="#1b2434"/>
@@ -204,30 +202,33 @@
     <circle cx="120" cy="184" r="2.5" fill="#ff5f56"/>
     <circle cx="127" cy="184" r="2.5" fill="#ffbd2e"/>
     <circle cx="134" cy="184" r="2.5" fill="#27c93f"/>
-    <text x="180" y="187" fill="#8b949e" font-family="'Fira Code', monospace" font-size="7" text-anchor="middle">terminal.bash</text>
+    <text x="180" y="187" fill="#8b949e" font-family="'Fira Code', monospace" font-size="7" text-anchor="middle">mysql_queries.sql</text>
     
-    <!-- Scrolling Logs Animation -->
-    <g class="anim-logs" opacity="0.85">
-      <line x1="118" y1="205" x2="200" y2="205" stroke="#00d4ff" stroke-width="2.5" stroke-linecap="round"/>
-      <line x1="124" y1="218" x2="225" y2="218" stroke="#00ff66" stroke-width="2" stroke-linecap="round"/>
-      <line x1="124" y1="230" x2="185" y2="230" stroke="#f472b6" stroke-width="2" stroke-linecap="round"/>
-      <line x1="124" y1="242" x2="215" y2="242" stroke="#93c5fd" stroke-width="2" stroke-linecap="round"/>
-      <line x1="118" y1="254" x2="190" y2="254" stroke="#facc15" stroke-width="2" stroke-linecap="round"/>
-      <line x1="118" y1="266" x2="228" y2="266" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
-      <line x1="118" y1="278" x2="175" y2="278" stroke="#a78bfa" stroke-width="2" stroke-linecap="round"/>
-      <line x1="118" y1="290" x2="215" y2="290" stroke="#00ff66" stroke-width="2" stroke-linecap="round"/>
-      <line x1="118" y1="302" x2="195" y2="302" stroke="#fb7185" stroke-width="2" stroke-linecap="round"/>
-      <line x1="118" y1="314" x2="220" y2="314" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
-      <line x1="118" y1="326" x2="170" y2="326" stroke="#facc15" stroke-width="2" stroke-linecap="round"/>
-      <line x1="118" y1="338" x2="210" y2="338" stroke="#a78bfa" stroke-width="2" stroke-linecap="round"/>
-      <line x1="118" y1="350" x2="185" y2="350" stroke="#00ff66" stroke-width="2" stroke-linecap="round"/>
-      <line x1="118" y1="362" x2="225" y2="362" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
-      <line x1="118" y1="374" x2="165" y2="374" stroke="#f472b6" stroke-width="2" stroke-linecap="round"/>
-      <line x1="118" y1="386" x2="215" y2="386" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+    <!-- Scrolling SQL Code -->
+    <g font-family="'Fira Code', monospace" font-size="7" fill="#c9d1d9">
+      <text x="116" y="202" fill="#ff7b72">SELECT</text>
+      <text x="116" y="213" fill="#79c0ff">  v.vendor_name,</text>
+      <text x="116" y="224" fill="#79c0ff">  SUM(s.amount)</text>
+      <text x="116" y="235" fill="#ff7b72">FROM </text><text x="142" y="235" fill="#a5d6ff">sales_tbl s</text>
+      <text x="116" y="246" fill="#ff7b72">JOIN </text><text x="142" y="246" fill="#a5d6ff">vendors v</text>
+      <text x="116" y="257" fill="#d2a8ff">  ON s.v_id=v.id</text>
+      <text x="116" y="268" fill="#ff7b72">GROUP BY </text><text x="158" y="268" fill="#79c0ff">1</text>
+      <text x="116" y="279" fill="#ff7b72">ORDER BY </text><text x="158" y="279" fill="#79c0ff">2 DESC</text>
+      
+      <line x1="116" y1="288" x2="230" y2="288" stroke="#30363d" stroke-width="1"/>
+      
+      <!-- Query Output Table mini view -->
+      <rect x="116" y="295" width="118" height="95" fill="#070a12" rx="3"/>
+      <text x="120" y="307" fill="#00d4ff" font-weight="600">vendor | revenue</text>
+      <text x="120" y="320" fill="#7ee787">Vendor_A | $142,500</text>
+      <text x="120" y="332" fill="#7ee787">Vendor_B | $98,200</text>
+      <text x="120" y="344" fill="#7ee787">Vendor_C | $65,100</text>
+      <text x="120" y="356" fill="#7ee787">Vendor_D | $41,800</text>
+      <text x="120" y="375" fill="#00d4ff">✓ 172k rows fetched</text>
     </g>
   </g>
 
-  <!-- Central Curved Ultrawide Display (Main IDE) -->
+  <!-- Central Curved Ultrawide Display (Main Power BI Executive Dashboard) -->
   <g class="center-monitor">
     <!-- Heavy Stand -->
     <polygon points="360,410 440,410 455,475 345,475" fill="#161f30" stroke="#253553" stroke-width="1"/>
@@ -237,84 +238,76 @@
     <!-- Curved Display Glass -->
     <rect x="238" y="168" width="324" height="209" rx="6" fill="url(#screenCenterGrad)"/>
     
-    <!-- IDE Window Titlebar -->
+    <!-- Power BI Titlebar -->
     <rect x="242" y="172" width="316" height="22" rx="3" fill="#131b2c"/>
     <circle cx="254" cy="183" r="3.5" fill="#ff5f56"/>
     <circle cx="265" cy="183" r="3.5" fill="#ffbd2e"/>
     <circle cx="276" cy="183" r="3.5" fill="#27c93f"/>
-    <text x="400" y="187" fill="#8b949e" font-family="'Fira Code', monospace" font-size="9" text-anchor="middle">ai_neural_pipeline.py — PyTorch</text>
+    <text x="400" y="187" fill="#8b949e" font-family="'Fira Code', monospace" font-size="9" text-anchor="middle">Executive_Analytics_Dashboard.pbix — Power BI</text>
 
-    <!-- Syntax Code Lines -->
-    <g transform="translate(250, 205)">
-      <!-- Line 1: class VisionTransformer(nn.Module): -->
-      <text y="10" font-family="'Fira Code', monospace" font-size="10">
-        <tspan fill="#ff7b72" font-weight="600">class </tspan>
-        <tspan fill="#d2a8ff" font-weight="600">VisionTransformer</tspan>
-        <tspan fill="#c9d1d9">(</tspan>
-        <tspan fill="#79c0ff">nn.Module</tspan>
-        <tspan fill="#c9d1d9">):</tspan>
-      </text>
+    <!-- Dashboard Content Visuals -->
+    <g transform="translate(250, 202)">
+      <!-- KPI Cards Row -->
+      <g>
+        <!-- Card 1 -->
+        <rect x="0" y="0" width="95" height="42" rx="4" fill="#0d1522" stroke="#00d4ff" stroke-width="1"/>
+        <text x="8" y="14" fill="#8b949e" font-family="'Fira Code', monospace" font-size="7">PROFIT AT RISK</text>
+        <text x="8" y="32" fill="#00d4ff" font-family="'Orbitron', sans-serif" font-size="12" font-weight="700">$2.1M</text>
 
-      <!-- Line 2: def __init__(self, emb_dim=768): -->
-      <text y="26" font-family="'Fira Code', monospace" font-size="10">
-        <tspan fill="#ff7b72">  def </tspan>
-        <tspan fill="#d2a8ff">__init__</tspan>
-        <tspan fill="#c9d1d9">(self, dim=</tspan>
-        <tspan fill="#79c0ff">768</tspan>
-        <tspan fill="#c9d1d9">):</tspan>
-      </text>
+        <!-- Card 2 -->
+        <rect x="105" y="0" width="95" height="42" rx="4" fill="#0d1522" stroke="#7f00ff" stroke-width="1"/>
+        <text x="113" y="14" fill="#8b949e" font-family="'Fira Code', monospace" font-size="7">LATE DELIVERIES</text>
+        <text x="113" y="32" fill="#f43f5e" font-family="'Orbitron', sans-serif" font-size="12" font-weight="700">54.7%</text>
 
-      <!-- Line 3: self.encoder = TransformerEncoder() -->
-      <text y="42" font-family="'Fira Code', monospace" font-size="10">
-        <tspan fill="#c9d1d9">    self.encoder = </tspan>
-        <tspan fill="#7ee787">TransformerEncoder</tspan>
-        <tspan fill="#c9d1d9">()</tspan>
-      </text>
+        <!-- Card 3 -->
+        <rect x="210" y="0" width="90" height="42" rx="4" fill="#0d1522" stroke="#00ff66" stroke-width="1"/>
+        <text x="218" y="14" fill="#8b949e" font-family="'Fira Code', monospace" font-size="7">RECORDS</text>
+        <text x="218" y="32" fill="#00ff66" font-family="'Orbitron', sans-serif" font-size="12" font-weight="700">172.7K</text>
+      </g>
 
-      <!-- Line 4: self.head = nn.Linear(dim, classes) -->
-      <text y="58" font-family="'Fira Code', monospace" font-size="10">
-        <tspan fill="#c9d1d9">    self.proj = </tspan>
-        <tspan fill="#79c0ff">nn.Linear</tspan>
-        <tspan fill="#c9d1d9">(dim, </tspan>
-        <tspan fill="#79c0ff">1024</tspan>
-        <tspan fill="#c9d1d9">)</tspan>
-      </text>
+      <!-- Main Visuals Split (Bar Chart & Line Chart) -->
+      <!-- Left Bar Chart -->
+      <g transform="translate(0, 52)">
+        <rect x="0" y="0" width="145" height="85" rx="4" fill="#0d131f" stroke="#253248" stroke-width="1"/>
+        <text x="8" y="14" fill="#8b949e" font-family="'Fira Code', monospace" font-size="7">ORDER VOLUME BY TIER</text>
+        
+        <rect x="10" y="25" width="100" height="9" rx="2" fill="#00d4ff"/>
+        <rect x="10" y="38" width="75" height="9" rx="2" fill="#7f00ff"/>
+        <rect x="10" y="51" width="115" height="9" rx="2" fill="#38bdf8"/>
+        <rect x="10" y="64" width="50" height="9" rx="2" fill="#a78bfa"/>
 
-      <!-- Line 5: def forward(self, x): -->
-      <text y="76" font-family="'Fira Code', monospace" font-size="10">
-        <tspan fill="#ff7b72">  def </tspan>
-        <tspan fill="#d2a8ff">forward</tspan>
-        <tspan fill="#c9d1d9">(self, x):</tspan>
-      </text>
+        <text x="115" y="32" fill="#c9d1d9" font-family="'Fira Code', monospace" font-size="6">Tier 1</text>
+        <text x="90" y="45" fill="#c9d1d9" font-family="'Fira Code', monospace" font-size="6">Tier 2</text>
+        <text x="130" y="58" fill="#c9d1d9" font-family="'Fira Code', monospace" font-size="6">Tier 3</text>
+      </g>
 
-      <!-- Line 6: tokens = self.patchify(x) -->
-      <text y="92" font-family="'Fira Code', monospace" font-size="10">
-        <tspan fill="#c9d1d9">    tokens = self.</tspan>
-        <tspan fill="#d2a8ff">patchify</tspan>
-        <tspan fill="#c9d1d9">(x)</tspan>
-      </text>
+      <!-- Right Area/Line Chart -->
+      <g transform="translate(155, 52)">
+        <rect x="0" y="0" width="145" height="85" rx="4" fill="#0d131f" stroke="#253248" stroke-width="1"/>
+        <text x="8" y="14" fill="#8b949e" font-family="'Fira Code', monospace" font-size="7">MONTHLY CHURN TREND</text>
+        
+        <path d="M 10 65 Q 40 20 70 50 T 135 25" fill="none" stroke="#00d4ff" stroke-width="2"/>
+        <path d="M 10 65 Q 40 20 70 50 T 135 25 L 135 75 L 10 75 Z" fill="#00d4ff" opacity="0.15"/>
+        
+        <circle cx="70" cy="50" r="3" fill="#7f00ff"/>
+        <circle cx="135" cy="25" r="3" fill="#00ff66"/>
+      </g>
 
-      <!-- Line 7: return self.proj(tokens) -->
-      <text y="108" font-family="'Fira Code', monospace" font-size="10">
-        <tspan fill="#ff7b72">    return </tspan>
-        <tspan fill="#c9d1d9">self.</tspan>
-        <tspan fill="#d2a8ff">proj</tspan>
-        <tspan fill="#c9d1d9">(tokens)</tspan>
-      </text>
-
-      <!-- Blinking Neon Cursor on Main IDE -->
-      <rect x="180" y="99" width="7" height="12" fill="#00d4ff" class="anim-cursor" filter="url(#neonBlur)"/>
+      <!-- DAX Formula Editor Window (Bottom) -->
+      <g transform="translate(0, 144)">
+        <rect x="0" y="0" width="300" height="22" rx="3" fill="#070a12" stroke="#1f2c42" stroke-width="1"/>
+        <text x="8" y="14" font-family="'Fira Code', monospace" font-size="8">
+          <tspan fill="#ff7b72">Late_Rate</tspan> <tspan fill="#c9d1d9">=</tspan> 
+          <tspan fill="#79c0ff"> DIVIDE</tspan><tspan fill="#c9d1d9">(</tspan>
+          <tspan fill="#d2a8ff">CALCULATE</tspan><tspan fill="#c9d1d9">(COUNT(Orders), Status="Late"), </tspan>
+          <tspan fill="#d2a8ff">COUNT</tspan><tspan fill="#c9d1d9">(Orders))</tspan>
+        </text>
+        <rect x="285" y="5" width="6" height="12" fill="#00d4ff" class="anim-cursor"/>
+      </g>
     </g>
-
-    <!-- Mini IDE Terminal Output at bottom of display -->
-    <rect x="242" y="325" width="316" height="46" rx="3" fill="#070a12"/>
-    <text x="250" y="340" font-family="'Fira Code', monospace" font-size="8" fill="#7ee787">✓ Epoch 100/100: Val Loss: 0.0142 | Accuracy: 99.4%</text>
-    <text x="250" y="354" font-family="'Fira Code', monospace" font-size="8" fill="#00d4ff">⚡ Model weights exported to ONNX runtime successfully.</text>
-    <rect x="250" y="360" width="220" height="3" rx="1.5" fill="#1b2434"/>
-    <rect x="250" y="360" width="215" height="3" rx="1.5" fill="#00d4ff"/>
   </g>
 
-  <!-- Right Auxiliary Monitor (Model Metrics & Spectrum Bars) -->
+  <!-- Right Auxiliary Monitor (Python EDA & Correlation Matrix) -->
   <g class="vertical-monitor-right" transform="rotate(-4 635 310)">
     <!-- Stand -->
     <rect x="610" y="380" width="14" height="92" fill="#1b2434"/>
@@ -328,30 +321,47 @@
     <circle cx="570" cy="184" r="2.5" fill="#ff5f56"/>
     <circle cx="577" cy="184" r="2.5" fill="#ffbd2e"/>
     <circle cx="584" cy="184" r="2.5" fill="#27c93f"/>
-    <text x="630" y="187" fill="#8b949e" font-family="'Fira Code', monospace" font-size="7" text-anchor="middle">metrics.stats</text>
+    <text x="630" y="187" fill="#8b949e" font-family="'Fira Code', monospace" font-size="7" text-anchor="middle">data_eda.ipynb</text>
 
-    <!-- Circular Gauge -->
-    <circle cx="625" cy="235" r="30" fill="none" stroke="#1f2c42" stroke-width="7"/>
-    <circle cx="625" cy="235" r="30" fill="none" stroke="#00d4ff" stroke-width="7" stroke-dasharray="150" stroke-dashoffset="35"/>
-    <text x="625" y="240" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="11" text-anchor="middle" font-weight="700">99.4%</text>
-    <text x="625" y="253" fill="#8b949e" font-family="'Fira Code', monospace" font-size="7" text-anchor="middle">PRECISION</text>
+    <!-- Jupyter Code Snippet -->
+    <g transform="translate(568, 200)" font-family="'Fira Code', monospace" font-size="7">
+      <text y="0" fill="#79c0ff">import</text><text x="32" y="0" fill="#c9d1d9"> pandas as pd</text>
+      <text y="12" fill="#79c0ff">import</text><text x="32" y="12" fill="#c9d1d9"> seaborn as sns</text>
+      <text y="28" fill="#c9d1d9">df = pd.read_csv("data")</text>
+      <text y="40" fill="#d2a8ff">sns.heatmap</text><text x="56" y="40" fill="#c9d1d9">(df.corr())</text>
+    </g>
 
-    <!-- Spectrum Audio / GPU Visualizer Bars -->
-    <g transform="translate(575, 290)">
-      <rect x="0" y="40" width="8" height="40" rx="3" fill="#00d4ff" class="bar-anim b1"/>
-      <rect x="14" y="20" width="8" height="60" rx="3" fill="#7f00ff" class="bar-anim b2"/>
-      <rect x="28" y="10" width="8" height="70" rx="3" fill="#38bdf8" class="bar-anim b3"/>
-      <rect x="42" y="30" width="8" height="50" rx="3" fill="#00ff66" class="bar-anim b4"/>
-      <rect x="56" y="15" width="8" height="65" rx="3" fill="#f43f5e" class="bar-anim b5"/>
-      <rect x="70" y="35" width="8" height="45" rx="3" fill="#00d4ff" class="bar-anim b6"/>
-      <rect x="84" y="25" width="8" height="55" rx="3" fill="#7f00ff" class="bar-anim b2"/>
-      <text x="48" y="85" fill="#8b949e" font-family="'Fira Code', monospace" font-size="7" text-anchor="middle">GPU INFERENCE</text>
+    <!-- Seaborn Correlation Matrix Heatmap Visualizer -->
+    <g transform="translate(575, 255)">
+      <rect x="0" y="0" width="100" height="80" fill="#070a12" rx="3" stroke="#1f2c42"/>
+      
+      <!-- Grid Cells with correlation colors -->
+      <rect x="5" y="5" width="28" height="22" fill="#00d4ff" rx="1"/>
+      <rect x="36" y="5" width="28" height="22" fill="#1e293b" rx="1"/>
+      <rect x="67" y="5" width="28" height="22" fill="#7f00ff" rx="1"/>
+
+      <rect x="5" y="30" width="28" height="22" fill="#1e293b" rx="1"/>
+      <rect x="36" y="30" width="28" height="22" fill="#00d4ff" rx="1"/>
+      <rect x="67" y="30" width="28" height="22" fill="#f43f5e" rx="1"/>
+
+      <rect x="5" y="55" width="28" height="22" fill="#7f00ff" rx="1"/>
+      <rect x="36" y="55" width="28" height="22" fill="#f43f5e" rx="1"/>
+      <rect x="67" y="55" width="28" height="22" fill="#00d4ff" rx="1"/>
+
+      <text x="50" y="92" fill="#8b949e" font-family="'Fira Code', monospace" font-size="7" text-anchor="middle">CORRELATION MATRIX</text>
+    </g>
+
+    <!-- Stat Bar Gauges -->
+    <g transform="translate(575, 360)">
+      <rect x="0" y="0" width="100" height="4" rx="2" fill="#21262d"/>
+      <rect x="0" y="0" width="85" height="4" rx="2" fill="#00ff66"/>
+      <text x="0" y="14" fill="#8b949e" font-family="'Fira Code', monospace" font-size="6">HYPOTHESIS TEST: p &lt; 0.05</text>
     </g>
   </g>
 
   <!-- Mechanical Keyboard, Mouse, Coffee Mug -->
   <g id="peripherals">
-    <!-- RGB Mechanical Keyboard (Custom 75%) -->
+    <!-- RGB Mechanical Keyboard -->
     <g transform="translate(285, 482)">
       <polygon points="10,0 220,0 230,28 0,28" fill="#121824" stroke="#00d4ff" stroke-width="1.2"/>
       <line x1="5" y1="28" x2="225" y2="28" stroke="#00d4ff" stroke-width="2.5" filter="url(#neonBlur)" opacity="0.8"/>
@@ -372,8 +382,8 @@
     <g transform="translate(210, 478)">
       <rect x="0" y="6" width="22" height="26" rx="4" fill="#1a2334" stroke="#7f00ff" stroke-width="1.5"/>
       <path d="M 0 12 C -8 12, -8 22, 0 22" fill="none" stroke="#7f00ff" stroke-width="1.8"/>
-      <!-- <AI/> branding on mug -->
-      <text x="3" y="22" fill="#00d4ff" font-family="'Fira Code', monospace" font-size="7" font-weight="600">&lt;AI/&gt;</text>
+      <!-- <DATA/> branding on mug -->
+      <text x="1" y="22" fill="#00d4ff" font-family="'Fira Code', monospace" font-size="6" font-weight="600">&lt;DATA/&gt;</text>
       <!-- Steam Lines -->
       <path d="M 6 4 C 4 -4, 10 -10, 7 -18" fill="none" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round" class="anim-steam1"/>
       <path d="M 12 4 C 15 -5, 9 -12, 14 -22" fill="none" stroke="#7f00ff" stroke-width="1.5" stroke-linecap="round" class="anim-steam2"/>
@@ -381,7 +391,7 @@
     </g>
   </g>
 
-  <!-- The Coder Figure (Ergonomic Chair, Cyber Hoodie & Headset) -->
+  <!-- The Data Analyst Figure (Ergonomic Chair, Cyber Hoodie & Headset) -->
   <g id="coderCharacter">
     <!-- Gaming Chair Backrest -->
     <path d="M 330 340 C 330 270, 470 270, 470 340 L 485 535 L 315 535 Z" fill="#0c111a" stroke="#1f2c42" stroke-width="2"/>
@@ -389,7 +399,7 @@
     <circle cx="380" cy="315" r="4.5" fill="#00d4ff" opacity="0.6"/>
     <circle cx="420" cy="315" r="4.5" fill="#00d4ff" opacity="0.6"/>
 
-    <!-- Coder Body (Cyberpunk Hoodie) -->
+    <!-- Analyst Body (Cyberpunk Hoodie) -->
     <g class="coder-torso">
       <path d="M 350 435 C 350 375, 370 355, 400 355 C 430 355, 450 375, 450 435 L 475 540 L 325 540 Z" fill="#141a26" stroke="#253248" stroke-width="1.5"/>
       <!-- Glowing Seam Trims -->
@@ -424,20 +434,20 @@
   </g>
 
   <!-- Floating Hologram Cards around Battlestation -->
-  <!-- Left Card: Git & Docker -->
+  <!-- Left Card: MySQL ETL -->
   <g transform="translate(60, 420)">
     <rect width="110" height="42" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.2" opacity="0.9"/>
-    <text x="12" y="18" fill="#58a6ff" font-family="'Orbitron', sans-serif" font-size="8" font-weight="700">DOCKER // MLOPS</text>
+    <text x="12" y="18" fill="#58a6ff" font-family="'Orbitron', sans-serif" font-size="8" font-weight="700">MYSQL // ETL</text>
     <rect x="12" y="25" width="86" height="5" rx="2.5" fill="#21262d"/>
     <rect x="12" y="25" width="76" height="5" rx="2.5" fill="#238636"/>
-    <text x="12" y="38" fill="#8b949e" font-family="'Fira Code', monospace" font-size="7">CONTAINER: READY</text>
+    <text x="12" y="38" fill="#8b949e" font-family="'Fira Code', monospace" font-size="7">PIPELINE: ACTIVE</text>
   </g>
 
-  <!-- Right Card: API Latency -->
+  <!-- Right Card: Power BI DAX KPIs -->
   <g transform="translate(630, 420)">
     <rect width="115" height="42" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.2" opacity="0.9"/>
-    <text x="12" y="18" fill="#00d4ff" font-family="'Orbitron', sans-serif" font-size="8" font-weight="700">FASTAPI // LATENCY</text>
-    <text x="12" y="34" fill="#ffffff" font-family="'Fira Code', monospace" font-size="11" font-weight="600">8.4 ms</text>
+    <text x="12" y="18" fill="#00d4ff" font-family="'Orbitron', sans-serif" font-size="8" font-weight="700">POWER BI // DAX</text>
+    <text x="12" y="34" fill="#ffffff" font-family="'Fira Code', monospace" font-size="11" font-weight="600">99.4% ACC</text>
     <circle cx="95" cy="30" r="4" fill="#238636" filter="url(#neonBlur)"/>
   </g>
 
