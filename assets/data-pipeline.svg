@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="200">
+  <defs>
+    <style>
+      .bg { fill: #0D1117; rx: 12px; }
+      .pipeline-line { stroke: #1F6FEB; stroke-width: 3; stroke-dasharray: 6 6; animation: flow 20s linear infinite; }
+      .active-line { stroke: url(#cyan-grad); stroke-width: 3; stroke-linecap: round; }
+      
+      .node-bg { fill: #161B22; stroke: #30363D; stroke-width: 2; rx: 10px; transition: all 0.3s; }
+      .node-glow { filter: drop-shadow(0px 0px 8px rgba(0, 212, 255, 0.4)); }
+      
+      .text-title { fill: #00D4FF; font-family: 'Segoe UI', monospace, sans-serif; font-weight: 700; font-size: 13px; }
+      .text-sub { fill: #8B949E; font-family: 'Segoe UI', sans-serif; font-size: 11px; }
+      
+      .pulse-dot { fill: #00D4FF; animation: pulse 2s infinite ease-in-out; }
+      .moving-particle { fill: #00D4FF; filter: drop-shadow(0 0 6px #00D4FF); }
+
+      @keyframes flow {
+        from { stroke-dashoffset: 400; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes pulse {
+        0% { transform: scale(0.95); opacity: 0.7; }
+        50% { transform: scale(1.1); opacity: 1; filter: drop-shadow(0 0 10px #00D4FF); }
+        100% { transform: scale(0.95); opacity: 0.7; }
+      }
+    </style>
+
+    <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1F6FEB" />
+      <stop offset="50%" stop-color="#00D4FF" />
+      <stop offset="100%" stop-color="#238636" />
+    </linearGradient>
+  </defs>
+
+  <!-- Container Box -->
+  <rect class="bg" width="800" height="200" />
+
+  <!-- Connecting Pipeline Stream -->
+  <path class="pipeline-line" d="M 120 100 L 280 100 L 440 100 L 600 100 L 680 100" />
+
+  <!-- Stage 1: Ingest -->
+  <g transform="translate(40, 55)">
+    <rect class="node-bg node-glow" width="130" height="90" />
+    <circle class="pulse-dot" cx="25" cy="25" r="5" />
+    <text x="38" y="29" class="text-title">1. INGEST</text>
+    <text x="15" y="55" class="text-sub">• Raw CSV / Logs</text>
+    <text x="15" y="72" class="text-sub">• SQL &amp; MySQL</text>
+  </g>
+
+  <!-- Stage 2: Clean & Validate -->
+  <g transform="translate(220, 55)">
+    <rect class="node-bg node-glow" width="140" height="90" />
+    <circle class="pulse-dot" cx="25" cy="25" r="5" />
+    <text x="38" y="29" class="text-title">2. PROCESS</text>
+    <text x="15" y="55" class="text-sub">• Pandas &amp; NumPy</text>
+    <text x="15" y="72" class="text-sub">• SciPy Hypothesis</text>
+  </g>
+
+  <!-- Stage 3: Analyze -->
+  <g transform="translate(410, 55)">
+    <rect class="node-bg node-glow" width="140" height="90" />
+    <circle class="pulse-dot" cx="25" cy="25" r="5" />
+    <text x="38" y="29" class="text-title">3. ANALYZE</text>
+    <text x="15" y="55" class="text-sub">• Churn &amp; Delays</text>
+    <text x="15" y="72" class="text-sub">• EDA / Seaborn</text>
+  </g>
+
+  <!-- Stage 4: BI Insights -->
+  <g transform="translate(600, 55)">
+    <rect class="node-bg node-glow" stroke="#00D4FF" width="150" height="90" />
+    <circle class="pulse-dot" cx="25" cy="25" r="5" />
+    <text x="38" y="29" class="text-title" fill="#58A6FF">4. DECISIONS</text>
+    <text x="15" y="55" class="text-sub">• Power BI &amp; DAX</text>
+    <text x="15" y="72" class="text-sub">• Executive KPIs</text>
+  </g>
+
+  <!-- Animated Data Particles -->
+  <circle class="moving-particle" cx="170" cy="100" r="4">
+    <animate attributeName="cx" values="170;220;360;410;550;600" dur="4s" repeatCount="indefinite" />
+  </circle>
+</svg>
