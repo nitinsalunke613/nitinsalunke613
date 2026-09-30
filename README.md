@@ -19,7 +19,7 @@
 
   [![Profile Views](https://komarev.com/ghpvc/?username=nitinsalunke613&label=Profile%20Views&color=00d4ff&style=for-the-badge)](https://github.com/nitinsalunke613)
   [![GitHub followers](https://img.shields.io/github/followers/nitinsalunke613?style=for-the-badge&logo=github&color=00d4ff)](https://github.com/nitinsalunke613)
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/nitin-salunke-17897139b/)
   [![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:nitinsalunke1697@gmail.com)
 
 </div>
@@ -160,7 +160,7 @@ Studied how 5,630 customers in Tier 1, 2, and 3 cities differ in spending, payme
 
 <div align="center">
   
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Nitin%20Salunke-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Nitin%20Salunke-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/nitin-salunke-17897139b/)
   [![Email](https://img.shields.io/badge/Email-nitinsalunke1697@gmail.com-red?style=for-the-badge&logo=gmail)](mailto:nitinsalunke1697@gmail.com)
   [![GitHub](https://img.shields.io/badge/GitHub-nitinsalunke613-181717?style=for-the-badge&logo=github)](https://github.com/nitinsalunke613)
 
