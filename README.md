@@ -15,7 +15,7 @@
 
 ---
 
-### 🙋‍♂️ About Me
+## 🙋‍♂️ About Me
 
 <table>
 <tr>
@@ -31,7 +31,7 @@ I'm a fresher breaking into the IT industry as a Data Analyst. I build end-to-en
 </td>
 <td width="40%" align="center" valign="middle">
 
-<img src="assets/coder_v2.svg" width="98%" alt="Data Analyst // Nitin Salunke" />
+<img src="assets/coder_v2.svg" width=800 height=800 alt="Data Analytics Battlestation">
 
 </td>
 </tr>
@@ -39,7 +39,7 @@ I'm a fresher breaking into the IT industry as a Data Analyst. I build end-to-en
 
 ---
 
-### ⚙️ How I Work
+## ⚙️ How I Work
 
 | Step | What I do | Tools |
 | :---: | :--- | :--- |
@@ -56,7 +56,7 @@ I'm a fresher breaking into the IT industry as a Data Analyst. I build end-to-en
 
 ---
 
-### 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 **Languages & Databases**  
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -78,9 +78,9 @@ I'm a fresher breaking into the IT industry as a Data Analyst. I build end-to-en
 
 ---
 
-### 🚀 Featured Projects
+## 🚀 Featured Projects
 
-#### 🛒 Vendor Performance Analysis | Retail Inventory & Sales
+### 🛒 Vendor Performance Analysis | Retail Inventory & Sales
 `SQL` `Python` `Power BI` `SciPy`  
 
 Evaluated vendor efficiency and profitability to support purchasing, pricing, and inventory decisions, using SQL for ETL, Python for analysis and hypothesis testing, and Power BI for visualization.
@@ -97,7 +97,7 @@ Evaluated vendor efficiency and profitability to support purchasing, pricing, an
 
 ---
 
-#### 🚚 Supply Chain Delivery Performance Analysis | E-Commerce Order Fulfilment
+### 🚚 Supply Chain Delivery Performance Analysis | E-Commerce Order Fulfilment
 `Python` `Pandas` `Matplotlib` `Seaborn`  
 
 Analyzed 172,765 orders (Jan 2015 to Jan 2018) to quantify late deliveries, measure profit at risk, and find the operational bottlenecks behind them, all in one Jupyter notebook.
@@ -116,7 +116,7 @@ Analyzed 172,765 orders (Jan 2015 to Jan 2018) to quantify late deliveries, meas
 
 ---
 
-#### 🏙️ Tier-2/3 City E-commerce Consumption Pattern Analysis | Customer Behaviour & Churn
+### 🏙️ Tier-2/3 City E-commerce Consumption Pattern Analysis | Customer Behaviour & Churn
 `MySQL` `Python` `Power BI` `DAX`  
 
 Studied how 5,630 customers in Tier 1, 2, and 3 cities differ in spending, payments, and churn, with a city-tier-filtered Power BI dashboard and two supporting research papers.
@@ -134,7 +134,7 @@ Studied how 5,630 customers in Tier 1, 2, and 3 cities differ in spending, payme
 
 ---
 
-### 📌 Project Snapshot
+## 📌 Project Snapshot
 
 | 📈 Metric | 📊 Value |
 | :--- | :--- |
@@ -145,7 +145,7 @@ Studied how 5,630 customers in Tier 1, 2, and 3 cities differ in spending, payme
 
 ---
 
-### 📊 GitHub Stats
+## 📊 GitHub Stats
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=nitinsalunke613&show_icons=true&theme=radical&hide_border=true" width="48%" />
@@ -163,7 +163,7 @@ Studied how 5,630 customers in Tier 1, 2, and 3 cities differ in spending, payme
 
 ---
 
-### 🤝 Let's Connect
+## 🤝 Let's Connect
 
 <div align="center">
   
