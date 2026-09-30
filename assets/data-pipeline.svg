@@ -1,81 +1,314 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 370" width="100%" height="100%" style="background: #0d1117; border-radius: 12px;">
   <defs>
-    <style>
-      .bg { fill: #0D1117; rx: 12px; }
-      .pipeline-line { stroke: #1F6FEB; stroke-width: 3; stroke-dasharray: 6 6; animation: flow 20s linear infinite; }
-      .active-line { stroke: url(#cyan-grad); stroke-width: 3; stroke-linecap: round; }
-      
-      .node-bg { fill: #161B22; stroke: #30363D; stroke-width: 2; rx: 10px; transition: all 0.3s; }
-      .node-glow { filter: drop-shadow(0px 0px 8px rgba(0, 212, 255, 0.4)); }
-      
-      .text-title { fill: #00D4FF; font-family: 'Segoe UI', monospace, sans-serif; font-weight: 700; font-size: 13px; }
-      .text-sub { fill: #8B949E; font-family: 'Segoe UI', sans-serif; font-size: 11px; }
-      
-      .pulse-dot { fill: #00D4FF; animation: pulse 2s infinite ease-in-out; }
-      .moving-particle { fill: #00D4FF; filter: drop-shadow(0 0 6px #00D4FF); }
-
-      @keyframes flow {
-        from { stroke-dashoffset: 400; }
-        to { stroke-dashoffset: 0; }
-      }
-      @keyframes pulse {
-        0% { transform: scale(0.95); opacity: 0.7; }
-        50% { transform: scale(1.1); opacity: 1; filter: drop-shadow(0 0 10px #00D4FF); }
-        100% { transform: scale(0.95); opacity: 0.7; }
-      }
-    </style>
-
-    <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1F6FEB" />
-      <stop offset="50%" stop-color="#00D4FF" />
-      <stop offset="100%" stop-color="#238636" />
+    <!-- Gradients -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="50%" stop-color="#7f00ff"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
     </linearGradient>
+
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161f2c" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0d131f" stop-opacity="0.98"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Background Grid Pattern -->
+    <pattern id="bgGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#21262d" stroke-width="0.8" opacity="0.4"/>
+    </pattern>
+
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Orbitron:wght@700;800&display=swap');
+
+      /* Keyframe Animations */
+      @keyframes flowPulse {
+        0% { stroke-dashoffset: 40; }
+        100% { stroke-dashoffset: 0; }
+      }
+
+      @keyframes particleMove {
+        0% { transform: translateX(0); opacity: 0.2; }
+        50% { opacity: 1; }
+        100% { transform: translateX(14px); opacity: 0.2; }
+      }
+
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.6; filter: drop-shadow(0 0 4px #00d4ff); }
+        50% { opacity: 1; filter: drop-shadow(0 0 10px #7f00ff); }
+      }
+
+      .card {
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-4px);
+      }
+
+      .flow-line {
+        stroke-dasharray: 6 4;
+        animation: flowPulse 1.2s linear infinite;
+      }
+
+      .particle {
+        animation: particleMove 1.5s ease-in-out infinite;
+      }
+
+      .title-glow {
+        animation: pulseGlow 3s infinite alternate;
+      }
+    ]]></style>
   </defs>
 
-  <!-- Container Box -->
-  <rect class="bg" width="800" height="200" />
+  <!-- Background Grid -->
+  <rect width="960" height="370" fill="#0d1117" rx="12"/>
+  <rect width="960" height="370" fill="url(#bgGrid)" rx="12"/>
+  <rect x="1" y="1" width="958" height="368" fill="none" stroke="#30363d" stroke-width="1.5" rx="12"/>
 
-  <!-- Connecting Pipeline Stream -->
-  <path class="pipeline-line" d="M 120 100 L 280 100 L 440 100 L 600 100 L 680 100" />
+  <!-- Top Ambient Glow Bar -->
+  <rect x="18" y="0" width="924" height="3" fill="url(#headerGrad)" filter="url(#neonGlow)"/>
 
-  <!-- Stage 1: Ingest -->
-  <g transform="translate(40, 55)">
-    <rect class="node-bg node-glow" width="130" height="90" />
-    <circle class="pulse-dot" cx="25" cy="25" r="5" />
-    <text x="38" y="29" class="text-title">1. INGEST</text>
-    <text x="15" y="55" class="text-sub">• Raw CSV / Logs</text>
-    <text x="15" y="72" class="text-sub">• SQL &amp; MySQL</text>
+  <!-- Pipeline Header -->
+  <g transform="translate(18, 25)">
+    <rect x="0" y="0" width="220" height="26" rx="13" fill="#141c2b" stroke="#00d4ff" stroke-width="1.2"/>
+    <text x="110" y="17" font-family="'Orbitron', sans-serif" font-size="10" font-weight="800" fill="#00d4ff" text-anchor="middle" letter-spacing="1.5" class="title-glow">DATA PIPELINE WORKFLOW</text>
+    <text x="232" y="17" font-family="'Fira Code', monospace" font-size="10" fill="#8b949e">End-to-End Analytics &amp; Insight Generation</text>
   </g>
 
-  <!-- Stage 2: Clean & Validate -->
-  <g transform="translate(220, 55)">
-    <rect class="node-bg node-glow" width="140" height="90" />
-    <circle class="pulse-dot" cx="25" cy="25" r="5" />
-    <text x="38" y="29" class="text-title">2. PROCESS</text>
-    <text x="15" y="55" class="text-sub">• Pandas &amp; NumPy</text>
-    <text x="15" y="72" class="text-sub">• SciPy Hypothesis</text>
+  <!-- Flow Connector Tubes between steps -->
+  <g stroke-width="2" fill="none">
+    <!-- Step 1 -> 2 -->
+    <line x1="156" y1="210" x2="174" y2="210" stroke="#00d4ff" class="flow-line"/>
+    <polygon points="172,207 178,210 172,213" fill="#00d4ff"/>
+
+    <!-- Step 2 -> 3 -->
+    <line x1="312" y1="210" x2="330" y2="210" stroke="#7f00ff" class="flow-line"/>
+    <polygon points="328,207 334,210 328,213" fill="#7f00ff"/>
+
+    <!-- Step 3 -> 4 -->
+    <line x1="468" y1="210" x2="486" y2="210" stroke="#38bdf8" class="flow-line"/>
+    <polygon points="484,207 490,210 484,213" fill="#38bdf8"/>
+
+    <!-- Step 4 -> 5 -->
+    <line x1="624" y1="210" x2="642" y2="210" stroke="#ffbd2e" class="flow-line"/>
+    <polygon points="640,207 646,210 640,213" fill="#ffbd2e"/>
+
+    <!-- Step 5 -> 6 -->
+    <line x1="780" y1="210" x2="798" y2="210" stroke="#00ff66" class="flow-line"/>
+    <polygon points="796,207 802,210 796,213" fill="#00ff66"/>
   </g>
 
-  <!-- Stage 3: Analyze -->
-  <g transform="translate(410, 55)">
-    <rect class="node-bg node-glow" width="140" height="90" />
-    <circle class="pulse-dot" cx="25" cy="25" r="5" />
-    <text x="38" y="29" class="text-title">3. ANALYZE</text>
-    <text x="15" y="55" class="text-sub">• Churn &amp; Delays</text>
-    <text x="15" y="72" class="text-sub">• EDA / Seaborn</text>
+  <!-- STEP 1: INGEST -->
+  <g class="card" transform="translate(18, 75)">
+    <rect width="138" height="260" rx="8" fill="url(#cardBg)" stroke="#00d4ff" stroke-width="1.5"/>
+    <!-- Step Number Badge -->
+    <rect x="8" y="10" width="28" height="18" rx="4" fill="#00d4ff" opacity="0.2"/>
+    <text x="22" y="23" font-family="'Orbitron', sans-serif" font-size="10" font-weight="700" fill="#00d4ff" text-anchor="middle">01</text>
+    
+    <text x="42" y="24" font-family="'Orbitron', sans-serif" font-size="11" font-weight="700" fill="#ffffff">INGEST</text>
+    <line x1="8" y1="36" x2="130" y2="36" stroke="#30363d" stroke-width="1"/>
+
+    <!-- Icon: Database Cylinder -->
+    <g transform="translate(53, 50)" stroke="#00d4ff" stroke-width="1.5" fill="none">
+      <ellipse cx="16" cy="6" rx="14" ry="5"/>
+      <path d="M 2 6 L 2 26 C 2 31, 30 31, 30 26 L 30 6"/>
+      <path d="M 2 16 C 2 21, 30 21, 30 16"/>
+    </g>
+
+    <!-- Description -->
+    <text x="10" y="112" font-family="'Fira Code', monospace" font-size="8.5" fill="#c9d1d9">
+      <tspan x="10" dy="0">• Load raw CSVs</tspan>
+      <tspan x="10" dy="14">  into database</tspan>
+      <tspan x="10" dy="14">• Data pipeline</tspan>
+      <tspan x="10" dy="14">  ingestion</tspan>
+    </text>
+
+    <!-- Tools Badges -->
+    <g transform="translate(8, 185)">
+      <rect x="0" y="0" width="36" height="18" rx="4" fill="#0d1117" stroke="#00d4ff" stroke-width="1"/>
+      <text x="18" y="12" font-family="'Fira Code', monospace" font-size="7.5" fill="#00d4ff" text-anchor="middle">SQL</text>
+
+      <rect x="42" y="0" width="46" height="18" rx="4" fill="#0d1117" stroke="#00d4ff" stroke-width="1"/>
+      <text x="65" y="12" font-family="'Fira Code', monospace" font-size="7.5" fill="#00d4ff" text-anchor="middle">MySQL</text>
+
+      <rect x="0" y="24" width="52" height="18" rx="4" fill="#0d1117" stroke="#00d4ff" stroke-width="1"/>
+      <text x="26" y="36" font-family="'Fira Code', monospace" font-size="7.5" fill="#00d4ff" text-anchor="middle">Python</text>
+    </g>
   </g>
 
-  <!-- Stage 4: BI Insights -->
-  <g transform="translate(600, 55)">
-    <rect class="node-bg node-glow" stroke="#00D4FF" width="150" height="90" />
-    <circle class="pulse-dot" cx="25" cy="25" r="5" />
-    <text x="38" y="29" class="text-title" fill="#58A6FF">4. DECISIONS</text>
-    <text x="15" y="55" class="text-sub">• Power BI &amp; DAX</text>
-    <text x="15" y="72" class="text-sub">• Executive KPIs</text>
+  <!-- STEP 2: CLEAN -->
+  <g class="card" transform="translate(174, 75)">
+    <rect width="138" height="260" rx="8" fill="url(#cardBg)" stroke="#7f00ff" stroke-width="1.5"/>
+    <rect x="8" y="10" width="28" height="18" rx="4" fill="#7f00ff" opacity="0.2"/>
+    <text x="22" y="23" font-family="'Orbitron', sans-serif" font-size="10" font-weight="700" fill="#a78bfa" text-anchor="middle">02</text>
+    
+    <text x="42" y="24" font-family="'Orbitron', sans-serif" font-size="11" font-weight="700" fill="#ffffff">CLEAN</text>
+    <line x1="8" y1="36" x2="130" y2="36" stroke="#30363d" stroke-width="1"/>
+
+    <!-- Icon: Filter / Broom -->
+    <g transform="translate(53, 50)" stroke="#a78bfa" stroke-width="1.5" fill="none">
+      <polygon points="4,4 28,4 18,18 18,28 14,30 14,18"/>
+      <line x1="22" y1="8" x2="28" y2="2" stroke-dasharray="2 2"/>
+    </g>
+
+    <!-- Description -->
+    <text x="10" y="112" font-family="'Fira Code', monospace" font-size="8.5" fill="#c9d1d9">
+      <tspan x="10" dy="0">• Fix data types</tspan>
+      <tspan x="10" dy="14">• Label formatting</tspan>
+      <tspan x="10" dy="14">• Handle nulls</tspan>
+      <tspan x="10" dy="14">• Remove outliers</tspan>
+    </text>
+
+    <!-- Tools Badges -->
+    <g transform="translate(8, 185)">
+      <rect x="0" y="0" width="54" height="18" rx="4" fill="#0d1117" stroke="#7f00ff" stroke-width="1"/>
+      <text x="27" y="12" font-family="'Fira Code', monospace" font-size="7.5" fill="#a78bfa" text-anchor="middle">Pandas</text>
+
+      <rect x="60" y="0" width="46" height="18" rx="4" fill="#0d1117" stroke="#7f00ff" stroke-width="1"/>
+      <text x="83" y="12" font-family="'Fira Code', monospace" font-size="7.5" fill="#a78bfa" text-anchor="middle">NumPy</text>
+    </g>
   </g>
 
-  <!-- Animated Data Particles -->
-  <circle class="moving-particle" cx="170" cy="100" r="4">
-    <animate attributeName="cx" values="170;220;360;410;550;600" dur="4s" repeatCount="indefinite" />
-  </circle>
+  <!-- STEP 3: EXPLORE -->
+  <g class="card" transform="translate(330, 75)">
+    <rect width="138" height="260" rx="8" fill="url(#cardBg)" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect x="8" y="10" width="28" height="18" rx="4" fill="#38bdf8" opacity="0.2"/>
+    <text x="22" y="23" font-family="'Orbitron', sans-serif" font-size="10" font-weight="700" fill="#38bdf8" text-anchor="middle">03</text>
+    
+    <text x="42" y="24" font-family="'Orbitron', sans-serif" font-size="11" font-weight="700" fill="#ffffff">EXPLORE</text>
+    <line x1="8" y1="36" x2="130" y2="36" stroke="#30363d" stroke-width="1"/>
+
+    <!-- Icon: Magnifying Glass & Scatter Points -->
+    <g transform="translate(51, 50)" stroke="#38bdf8" stroke-width="1.5" fill="none">
+      <circle cx="12" cy="12" r="9"/>
+      <line x1="19" y1="19" x2="28" y2="28"/>
+      <circle cx="9" cy="9" r="1" fill="#38bdf8"/>
+      <circle cx="15" cy="11" r="1" fill="#38bdf8"/>
+      <circle cx="11" cy="15" r="1" fill="#38bdf8"/>
+    </g>
+
+    <!-- Description -->
+    <text x="10" y="112" font-family="'Fira Code', monospace" font-size="8.5" fill="#c9d1d9">
+      <tspan x="10" dy="0">• Correlations</tspan>
+      <tspan x="10" dy="14">• Distributions</tspan>
+      <tspan x="10" dy="14">• Trend patterns</tspan>
+      <tspan x="10" dy="14">• Feature EDA</tspan>
+    </text>
+
+    <!-- Tools Badges -->
+    <g transform="translate(8, 185)">
+      <rect x="0" y="0" width="70" height="18" rx="4" fill="#0d1117" stroke="#38bdf8" stroke-width="1"/>
+      <text x="35" y="12" font-family="'Fira Code', monospace" font-size="7.5" fill="#38bdf8" text-anchor="middle">Matplotlib</text>
+
+      <rect x="0" y="24" width="58" height="18" rx="4" fill="#0d1117" stroke="#38bdf8" stroke-width="1"/>
+      <text x="29" y="36" font-family="'Fira Code', monospace" font-size="7.5" fill="#38bdf8" text-anchor="middle">Seaborn</text>
+    </g>
+  </g>
+
+  <!-- STEP 4: VALIDATE -->
+  <g class="card" transform="translate(486, 75)">
+    <rect width="138" height="260" rx="8" fill="url(#cardBg)" stroke="#ffbd2e" stroke-width="1.5"/>
+    <rect x="8" y="10" width="28" height="18" rx="4" fill="#ffbd2e" opacity="0.2"/>
+    <text x="22" y="23" font-family="'Orbitron', sans-serif" font-size="10" font-weight="700" fill="#ffbd2e" text-anchor="middle">04</text>
+    
+    <text x="42" y="24" font-family="'Orbitron', sans-serif" font-size="11" font-weight="700" fill="#ffffff">VALIDATE</text>
+    <line x1="8" y1="36" x2="130" y2="36" stroke="#30363d" stroke-width="1"/>
+
+    <!-- Icon: Bell Curve / Stat Verification -->
+    <g transform="translate(51, 50)" stroke="#ffbd2e" stroke-width="1.5" fill="none">
+      <path d="M 2 26 Q 10 26 14 16 Q 18 4 20 4 Q 22 4 26 16 Q 30 26 38 26"/>
+      <line x1="2" y1="26" x2="38" y2="26"/>
+      <path d="M 24 20 L 27 23 L 34 14" stroke="#00ff66" stroke-width="1.8"/>
+    </g>
+
+    <!-- Description -->
+    <text x="10" y="112" font-family="'Fira Code', monospace" font-size="8.5" fill="#c9d1d9">
+      <tspan x="10" dy="0">• Hypothesis</tspan>
+      <tspan x="10" dy="14">  testing</tspan>
+      <tspan x="10" dy="14">• p-value tests</tspan>
+      <tspan x="10" dy="14">• Statistical</tspan>
+      <tspan x="10" dy="14">  validation</tspan>
+    </text>
+
+    <!-- Tools Badges -->
+    <g transform="translate(8, 185)">
+      <rect x="0" y="0" width="50" height="18" rx="4" fill="#0d1117" stroke="#ffbd2e" stroke-width="1"/>
+      <text x="25" y="12" font-family="'Fira Code', monospace" font-size="7.5" fill="#ffbd2e" text-anchor="middle">SciPy</text>
+    </g>
+  </g>
+
+  <!-- STEP 5: VISUALIZE -->
+  <g class="card" transform="translate(642, 75)">
+    <rect width="138" height="260" rx="8" fill="url(#cardBg)" stroke="#00ff66" stroke-width="1.5"/>
+    <rect x="8" y="10" width="28" height="18" rx="4" fill="#00ff66" opacity="0.2"/>
+    <text x="22" y="23" font-family="'Orbitron', sans-serif" font-size="10" font-weight="700" fill="#00ff66" text-anchor="middle">05</text>
+    
+    <text x="42" y="24" font-family="'Orbitron', sans-serif" font-size="11" font-weight="700" fill="#ffffff">VISUALIZE</text>
+    <line x1="8" y1="36" x2="130" y2="36" stroke="#30363d" stroke-width="1"/>
+
+    <!-- Icon: Dashboard Visual / Bar Chart -->
+    <g transform="translate(53, 50)" fill="#00ff66">
+      <rect x="2" y="16" width="6" height="12" rx="1"/>
+      <rect x="11" y="8" width="6" height="20" rx="1"/>
+      <rect x="20" y="2" width="6" height="26" rx="1"/>
+      <line x1="0" y1="29" x2="28" y2="29" stroke="#00ff66" stroke-width="1.5"/>
+    </g>
+
+    <!-- Description -->
+    <text x="10" y="112" font-family="'Fira Code', monospace" font-size="8.5" fill="#c9d1d9">
+      <tspan x="10" dy="0">• Interactive</tspan>
+      <tspan x="10" dy="14">  dashboards</tspan>
+      <tspan x="10" dy="14">• DAX measures</tspan>
+      <tspan x="10" dy="14">• KPI cards &amp;</tspan>
+      <tspan x="10" dy="14">  matrix reports</tspan>
+    </text>
+
+    <!-- Tools Badges -->
+    <g transform="translate(8, 185)">
+      <rect x="0" y="0" width="62" height="18" rx="4" fill="#0d1117" stroke="#00ff66" stroke-width="1"/>
+      <text x="31" y="12" font-family="'Fira Code', monospace" font-size="7.5" fill="#00ff66" text-anchor="middle">Power BI</text>
+    </g>
+  </g>
+
+  <!-- STEP 6: RECOMMEND -->
+  <g class="card" transform="translate(798, 75)">
+    <rect width="138" height="260" rx="8" fill="url(#cardBg)" stroke="#f43f5e" stroke-width="1.5"/>
+    <rect x="8" y="10" width="28" height="18" rx="4" fill="#f43f5e" opacity="0.2"/>
+    <text x="22" y="23" font-family="'Orbitron', sans-serif" font-size="10" font-weight="700" fill="#f43f5e" text-anchor="middle">06</text>
+    
+    <text x="42" y="24" font-family="'Orbitron', sans-serif" font-size="11" font-weight="700" fill="#ffffff">RECOMMEND</text>
+    <line x1="8" y1="36" x2="130" y2="36" stroke="#30363d" stroke-width="1"/>
+
+    <!-- Icon: Document with Checkmarks / Rocket -->
+    <g transform="translate(53, 50)" stroke="#f43f5e" stroke-width="1.5" fill="none">
+      <rect x="4" y="2" width="20" height="26" rx="2"/>
+      <line x1="8" y1="8" x2="18" y2="8"/>
+      <line x1="8" y1="14" x2="18" y2="14"/>
+      <line x1="8" y1="20" x2="14" y2="20"/>
+    </g>
+
+    <!-- Description -->
+    <text x="10" y="112" font-family="'Fira Code', monospace" font-size="8.5" fill="#c9d1d9">
+      <tspan x="10" dy="0">• Prioritized</tspan>
+      <tspan x="10" dy="14">  insights</tspan>
+      <tspan x="10" dy="14">• Actionable</tspan>
+      <tspan x="10" dy="14">  next steps</tspan>
+      <tspan x="10" dy="14">• Exec reports</tspan>
+    </text>
+
+    <!-- Tools Badges -->
+    <g transform="translate(8, 185)">
+      <rect x="0" y="0" width="36" height="18" rx="4" fill="#0d1117" stroke="#f43f5e" stroke-width="1"/>
+      <text x="18" y="12" font-family="'Fira Code', monospace" font-size="7.5" fill="#f43f5e" text-anchor="middle">PDF</text>
+
+      <rect x="42" y="0" width="50" height="18" rx="4" fill="#0d1117" stroke="#f43f5e" stroke-width="1"/>
+      <text x="67" y="12" font-family="'Fira Code', monospace" font-size="7.5" fill="#f43f5e" text-anchor="middle">README</text>
+    </g>
+  </g>
+
 </svg>
