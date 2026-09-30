@@ -1,8 +1,6 @@
 <div align="center">
   
   # Nitin Salunke
-
-  <img src="https://capsule-render.vercel.app/api?                       type=waving&color=0:0d1117,50:00d4ff,100:7f00ff&height=220&section=header&text=Harsh%20Choudhary&fontSize=60&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc%20%7C%20AI%20Engineer%20%7C%20Data%20Scientist&descAlignY=55&descSize=18" width="100%" /> 
   
   <a href="https://github.com/nitinsalunke613">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=1000&height=80&lines=Data+Analyst+%F0%9F%93%8A;Python+%F0%9F%90%8D+%7C+SQL+%F0%9F%97%84%EF%B8%8F+%7C+Power+BI+%E2%9A%A1;Turning+raw+data+into+business+decisions+%F0%9F%92%A1" alt="Typing SVG" />
