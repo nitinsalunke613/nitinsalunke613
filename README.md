@@ -9,8 +9,7 @@
   <br/><br/>
 
   <!-- Header Animations -->
-  <div align="center">
-  <img src="assets/animated-analytics.svg" alt="Animated Analytics Graphic" width="100%" />
+  <img src="assets/animated-analytics1.svg" alt="Animated Analytics Graphic" width="100%" />
 
 </div>
 
@@ -44,16 +43,20 @@ I'm a fresher breaking into the IT industry as a Data Analyst. I build end-to-en
 
   <img src="assets/data-pipeline1.svg" alt="Nitin Salunke Data Analytics Pipeline" width="100%" />
 
+</div>
+
 ---
 
 ## 🛠️ Tech Stack
 
-**Languages & Databases**  
+<div align="center">
+
+### 💻 Languages & Databases
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-**Data Analysis & Visualization**  
+### 📊 Data Analysis & Visualization
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
@@ -61,94 +64,52 @@ I'm a fresher breaking into the IT industry as a Data Analyst. I build end-to-en
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 
-**Tools**  
+### 🧰 Tools
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
----
-
-## 🚀 Featured Projects
-
-### 🛒 Vendor Performance Analysis | Retail Inventory & Sales
-`SQL` `Python` `Power BI` `SciPy`  
-
-Evaluated vendor efficiency and profitability to support purchasing, pricing, and inventory decisions, using SQL for ETL, Python for analysis and hypothesis testing, and Power BI for visualization.
-
-| Question | Finding |
-| :--- | :--- |
-| **Which brands need promotion?** | 198 brands with low sales but high margins |
-| **Vendor concentration risk?** | Top 10 vendors = 65.69% of purchases |
-| **Does bulk buying pay off?** | Up to 72% lower cost per unit |
-| **Inventory efficiency?** | $2.71M of unsold inventory |
-| **Are vendor margins really different?** | Yes, statistically significant (hypothesis test) |
-
-![Vendor Performance Dashboard](https://github.com/nitinsalunke613/vendor-performance-analysis-sql-python-powerbi/raw/master/images/Vendor_Performance_Dashboard.png)
+</div>
 
 ---
 
-### 🚚 Supply Chain Delivery Performance Analysis | E-Commerce Order Fulfilment
-`Python` `Pandas` `Matplotlib` `Seaborn`  
-
-Analyzed 172,765 orders (Jan 2015 to Jan 2018) to quantify late deliveries, measure profit at risk, and find the operational bottlenecks behind them, all in one Jupyter notebook.
-
-| KPI | Value |
-| :--- | :--- |
-| **Late delivery rate** | 54.71% |
-| **Profit at risk (delayed orders)** | $2.1M |
-| **First Class delay rate** | 100% (vs 39.8% Standard Class) |
-| **Loss-making orders** | 18.7% |
-| **Peak delay months** | August, September, December |
-
-*Key insight:* Shipping mode misconfiguration is the top operational failure, with payment-processing friction second. The project closes with a prioritized action plan and targets (late rate below 30% within 12 months).
-
-![Delay Distribution](https://github.com/nitinsalunke613/supply-chain-delivery-performance-analysis-python/raw/master/images/delay_distribution.png)
-
----
-
-### 🏙️ Tier-2/3 City E-commerce Consumption Pattern Analysis | Customer Behaviour & Churn
-`MySQL` `Python` `Power BI` `DAX`  
-
-Studied how 5,630 customers in Tier 1, 2, and 3 cities differ in spending, payments, and churn, with a city-tier-filtered Power BI dashboard and two supporting research papers.
-
-| Metric | Tier 1 | Tier 2 | Tier 3 |
-| :--- | :---: | :---: | :---: |
-| **Churn rate** | 14.51% | 19.83% | 21.37% |
-| **Top payment signal** | none | UPI 47.1% | E-wallet 35.7% |
-| **Mobile login preference** | 45.5% | 42.6% | 57.8% |
-| **Avg. orders per customer** | 2.91 | 2.57 | 3.13 |
-
-*Key insight:* Retention is a Tier-2/3 problem; complaints raise churn (correlation 0.25) while longer tenure lowers it (-0.34).
-
-![Tier 2/3 Dashboard](https://github.com/nitinsalunke613/tier-2-3-city-eCommerce-consumption-pattern-analysis-sql-python-powerbi/raw/master/images/Tier2_3_Ecommerce_Dashboard.png)
-
----
-
-## 📌 Project Snapshot
-
-| 📈 Metric | 📊 Value |
-| :--- | :--- |
-| 📁 **Portfolio projects** | 3 end-to-end analyses |
-| 🧾 **Records analyzed** | 170K+ orders, plus 5.6K customers and multi-table retail data |
-| 🧰 **Stack covered** | SQL · MySQL · Python · Power BI · DAX · SciPy |
-| 📑 **Deliverables** | Dashboards, PDF reports, documented notebooks |
-
----
-
-## 📊 GitHub Stats
+## 📊 GitHub Analytics Dashboard
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nitinsalunke613&show_icons=true&theme=radical&hide_border=true" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nitinsalunke613&layout=compact&theme=radical&hide_border=true" width="48%" />
-  
-  <br/><br/>
 
-  <!-- Auto-switching Snake Contribution Animation -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nitinsalunke613/nitinsalunke613/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nitinsalunke613/nitinsalunke613/output/github-contribution-grid-snake.svg">
-    <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/nitinsalunke613/nitinsalunke613/output/github-contribution-grid-snake.svg">
-  </picture>
+<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=nitinsalunke613&show_icons=true&count_private=true&theme=tokyonight&text_color=ffffff&bg_color=0d1117&title_color=00d4ff&icon_color=00d4ff&border_color=00d4ff" alt="GitHub Stats" width="49%" />
+<img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=nitinsalunke613&layout=compact&theme=tokyonight&text_color=ffffff&bg_color=0d1117&title_color=00d4ff&border_color=00d4ff" alt="Top Languages" width="41%" />
+
+<br/>
+
+<img src="https://streak-stats.demolab.com?user=nitinsalunke613&theme=tokyonight&background=0d1117&ring=00d4ff&fire=ff6b35&currStreakNum=ffffff&currStreakLabel=00d4ff&border=00d4ff" alt="GitHub Streak" width="49%" />
+
+<br/><br/>
+
+<img src="https://activity-graph.vercel.app/graph?username=nitinsalunke613&theme=tokyo-night&bg_color=0d1117&color=00d4ff&line=00d4ff&point=ffffff&hide_border=true" alt="Activity Graph" width="90%" />
+
+</div>
+
+---
+
+## 🏆 GitHub Trophies
+
+<div align="center">
+
+<img src="https://github-trophies.vercel.app/?username=nitinsalunke613&theme=tokyonight&no-frame=true&no-bg=false&margin-w=8&row=1&column=7" alt="Trophies" />
+
+</div>
+
+---
+
+## 🐍 Contribution Snake
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/nitinsalunke613/nitinsalunke613/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="90%" />
+
+<sub>⚙️ Generated automatically via GitHub Actions</sub>
+
 </div>
 
 ---
@@ -164,6 +125,8 @@ Studied how 5,630 customers in Tier 1, 2, and 3 cities differ in spending, payme
   <br/><br/>
 
   💬 **Open to Data Analyst opportunities. Let's talk data!**
+
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7f00ff,50:00d4ff,100:0d1117&height=150&section=footer" width="100%" />
 
   <br/><br/>
 
