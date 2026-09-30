@@ -31,7 +31,7 @@ I'm a fresher breaking into the IT industry as a Data Analyst. I build end-to-en
 </td>
 <td width="40%" align="center" valign="middle">
 
-<img src="assets/coder.svg" width="98%" alt="Data Analyst // Nitin Salunke" />
+<img src="assets/coder_v2.svg" width="98%" alt="Data Analyst // Nitin Salunke" />
 
 </td>
 </tr>
