@@ -3,7 +3,7 @@
 # Nitin Salunke
 
 <a href="https://github.com/nitinsalunke613">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=700&height=80&lines=Data+Analyst;Python+%7C+SQL+%7C+Power+BI;Turning+raw+data+into+business+decisions" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=700&height=80&lines=Data+Analyst+📊;Python+%7C+SQL+%7C+Power+BI;Turning+raw+data+into+business+decisions" alt="Typing SVG" />
 </a>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=nitinsalunke613&label=Profile%20Views&color=00d4ff&style=for-the-badge)
