@@ -52,7 +52,7 @@ I'm a fresher breaking into the IT industry as a Data Analyst. I build end-to-en
 
 <br/><br/>
 
-  <img src="assets/data-pipeline.svg" alt="Nitin Salunke Data Analytics Pipeline" width="100%" />
+  <img src="assets/data-pipeline1.svg" alt="Nitin Salunke Data Analytics Pipeline" width="100%" />
 
 ---
 
