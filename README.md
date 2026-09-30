@@ -9,6 +9,7 @@
   <br/><br/>
 
   <!-- Header Animations -->
+  <div align="center">
   <img src="assets/animated-analytics.svg" alt="Animated Analytics Graphic" width="100%" />
 
 </div>
@@ -40,17 +41,6 @@ I'm a fresher breaking into the IT industry as a Data Analyst. I build end-to-en
 ---
 
 ## ⚙️ How I Work
-
-| Step | What I do | Tools |
-| :---: | :--- | :--- |
-| 1️⃣ **Ingest** | Load raw CSVs into a database | `SQL`, `MySQL`, `Python` |
-| 2️⃣ **Clean** | Fix types, labels, nulls, outliers | `Pandas`, `NumPy` |
-| 3️⃣ **Explore** | Correlations, distributions, patterns | `Matplotlib`, `Seaborn` |
-| 4️⃣ **Validate** | Hypothesis testing on findings | `SciPy` |
-| 5️⃣ **Visualize** | Interactive dashboards with DAX | `Power BI` |
-| 6️⃣ **Recommend** | Prioritized, actionable next steps | `PDF reports`, `README` |
-
-<br/><br/>
 
   <img src="assets/data-pipeline1.svg" alt="Nitin Salunke Data Analytics Pipeline" width="100%" />
 
