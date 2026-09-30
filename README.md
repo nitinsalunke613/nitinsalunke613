@@ -26,16 +26,62 @@ I'm a fresher breaking into the IT industry as a **Data Analyst**. I build end-t
 
 ---
 
+---
+
 ## ⚙️ How I Work
 
-| Step | What I do | Tools |
-| ---- | --------- | ----- |
-| 1️⃣ Ingest | Load raw CSVs into a database | SQL, MySQL, Python |
-| 2️⃣ Clean | Fix types, labels, nulls, outliers | Pandas, NumPy |
-| 3️⃣ Explore | Correlations, distributions, patterns | Matplotlib, Seaborn |
-| 4️⃣ Validate | Hypothesis testing on findings | SciPy |
-| 5️⃣ Visualize | Interactive dashboards with DAX | Power BI |
-| 6️⃣ Recommend | Prioritized, actionable next steps | PDF reports, README |
+<table>
+  <tr>
+    <!-- Table on the left side -->
+    <td valign="top">
+      <table>
+        <thead>
+          <tr>
+            <th>Step</th>
+            <th>What I do</th>
+            <th>Tools</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1️⃣ Ingest</td>
+            <td>Load raw CSVs into a database</td>
+            <td>SQL, MySQL, Python</td>
+          </tr>
+          <tr>
+            <td>2️⃣ Clean</td>
+            <td>Fix types, labels, nulls, outliers</td>
+            <td>Pandas, NumPy</td>
+          </tr>
+          <tr>
+            <td>3️⃣ Explore</td>
+            <td>Correlations, distributions, patterns</td>
+            <td>Matplotlib, Seaborn</td>
+          </tr>
+          <tr>
+            <td>4️⃣ Validate</td>
+            <td>Hypothesis testing on findings</td>
+            <td>SciPy</td>
+          </tr>
+          <tr>
+            <td>5️⃣ Visualize</td>
+            <td>Interactive dashboards with DAX</td>
+            <td>Power BI</td>
+          </tr>
+          <tr>
+            <td>6️⃣ Recommend</td>
+            <td>Prioritized, actionable next steps</td>
+            <td>PDF reports, README</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+    <!-- Animation on the right side -->
+    <td valign="middle" align="center" width="40%">
+      <img src="assets/animation.svg" alt="Animation" width="100%" />
+    </td>
+  </tr>
+</table>
 
 ---
 
