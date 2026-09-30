@@ -30,8 +30,8 @@
   <!-- Background Canvas -->
   <rect class="bg" width="800" height="200" rx="10"/>
 
-  <!-- Animated Bar Chart -->
-  <g transform="translate(150, 0)">
+  <!-- Animated Bar Chart (Centered) -->
+  <g transform="translate(210, 10)">
     <rect class="bar" x="50" style="--h: 60px;" width="30" rx="4" />
     <rect class="bar" x="100" style="--h: 90px;" width="30" rx="4" />
     <rect class="bar" x="150" style="--h: 50px;" width="30" rx="4" />
@@ -40,8 +40,8 @@
     <rect class="bar" x="300" style="--h: 140px;" width="30" rx="4" />
   </g>
 
-  <!-- Animated Line Graph overlay -->
-  <g transform="translate(150, 0)">
+  <!-- Animated Line Graph overlay (Centered) -->
+  <g transform="translate(210, 10)">
     <path class="line" d="M 65 100 L 115 70 L 165 110 L 215 40 L 265 80 L 315 20" />
     <!-- Nodes -->
     <circle class="node" cx="65" cy="100" />
