@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      .bg { fill: transparent; }
+      .bar { fill: #00D4FF; opacity: 0.8; animation: rise 3s infinite alternate ease-in-out; }
+      .bar:nth-child(2) { animation-delay: 0.2s; }
+      .bar:nth-child(3) { animation-delay: 0.4s; }
+      .bar:nth-child(4) { animation-delay: 0.6s; }
+      .bar:nth-child(5) { animation-delay: 0.8s; }
+      .bar:nth-child(6) { animation-delay: 1.0s; }
+      .line { fill: none; stroke: #ffffff; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: draw 4s infinite linear; }
+      .node { fill: #00D4FF; stroke: #0D1117; stroke-width: 2; animation: pulse 2s infinite alternate; }
+      
+      @keyframes rise {
+        0% { height: 10px; y: 150; }
+        100% { height: var(--h); y: calc(160 - var(--h)); }
+      }
+      @keyframes draw {
+        0% { stroke-dashoffset: 1000; }
+        50% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -1000; }
+      }
+      @keyframes pulse {
+        0% { r: 4; opacity: 0.7; }
+        100% { r: 7; opacity: 1; filter: drop-shadow(0 0 5px #00D4FF); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect class="bg" width="800" height="200" rx="10"/>
+
+  <!-- Animated Bar Chart -->
+  <g transform="translate(150, 0)">
+    <rect class="bar" x="50" style="--h: 60px;" width="30" rx="4" />
+    <rect class="bar" x="100" style="--h: 90px;" width="30" rx="4" />
+    <rect class="bar" x="150" style="--h: 50px;" width="30" rx="4" />
+    <rect class="bar" x="200" style="--h: 120px;" width="30" rx="4" />
+    <rect class="bar" x="250" style="--h: 80px;" width="30" rx="4" />
+    <rect class="bar" x="300" style="--h: 140px;" width="30" rx="4" />
+  </g>
+
+  <!-- Animated Line Graph overlay -->
+  <g transform="translate(150, 0)">
+    <path class="line" d="M 65 100 L 115 70 L 165 110 L 215 40 L 265 80 L 315 20" />
+    <!-- Nodes -->
+    <circle class="node" cx="65" cy="100" />
+    <circle class="node" cx="115" cy="70" style="animation-delay: 0.2s" />
+    <circle class="node" cx="165" cy="110" style="animation-delay: 0.4s" />
+    <circle class="node" cx="215" cy="40" style="animation-delay: 0.6s" />
+    <circle class="node" cx="265" cy="80" style="animation-delay: 0.8s" />
+    <circle class="node" cx="315" cy="20" style="animation-delay: 1.0s" />
+  </g>
+</svg>
