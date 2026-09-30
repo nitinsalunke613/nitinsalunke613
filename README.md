@@ -37,9 +37,13 @@ I'm a fresher breaking into the IT industry as a Data Analyst. I build end-to-en
 </tr>
 </table>
 
+</div>
+
 ---
 
 ## ⚙️ How I Work
+
+<div align="center">
 
   <img src="assets/data-pipeline1.svg" alt="Nitin Salunke Data Analytics Pipeline" width="100%" />
 
@@ -118,7 +122,6 @@ I'm a fresher breaking into the IT industry as a Data Analyst. I build end-to-en
 
 <div align="center">
 
-[![Profile Visitors](https://visitor-badge.laobi.icu/badge?page_id=nitinsalunke613.nitinsalunke613&title=PROFILE%20VISITORS&style=for-the-badge&color=00d4ff)](https://github.com/nitinsalunke613)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Nitin%20Salunke-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nitin-salunke-17897139b/)
 [![Email](https://img.shields.io/badge/Email-nitinsalunke1697%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nitinsalunke1697@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-nitinsalunke613-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nitinsalunke613)
